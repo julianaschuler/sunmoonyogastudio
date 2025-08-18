@@ -6,6 +6,11 @@
         src: url("/fonts/wtf_horseland_regular-webfont.woff2") format("woff2");
 }
 
+@font-face {
+        font-family: "TGO";
+        src: url("/fonts/thegreatoutdoors-rough-regular-webfont.woff2") format("woff2");
+}
+
 /* ----------- CSS RESET --------- */
 
 * {
@@ -119,7 +124,7 @@ html {
 
 .bg-dark     { background-color: var(--dark);}
 .bg-featured { background-color: var(--featured);}
-.bg-medium   { background-color: var(--medium); }
+.bg-medium   { background-color: var(--medium); border-radius: 4rem;}
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 
@@ -141,6 +146,15 @@ html {
 .bg-welle {
       background-image: url('/images/welle.jpg');
       border-radius: 4rem;
+}
+
+.bg-juliana {
+      background-image: url('/images/sunmoonyogastudio-about-juliana.JPG');
+      border-radius: 4rem;
+}
+
+.border-radius {
+  border-radius: 4rem;
 }
 
 
@@ -202,6 +216,7 @@ a.bg-image { display: block;}
 body {
   font-family: 'IBM Plex Mono', monospace;  /* Add your font here */ 
   color: var(--dark-text);
+  background-color: var(--light);
 }
 
 h1 {
@@ -209,9 +224,15 @@ h1 {
     font-size: 5rem;
 }
 
+.quote {
+  font-size: 2.2rem;
+}
+
 .h1-sub {
   font-size: 3.5rem;
+  margin-top: -1rem;
 }
+
 
 h2, h3, h4, h5, h6 {
   line-height: 1.1;
@@ -245,8 +266,17 @@ p, li {
   background-color: var(--light);
   margin: 1rem;
   text-align: center;
-  border-radius: 3rem;
+  border-radius: 4rem;
 }
+
+.margin-c1 {
+  margin: 1rem;
+}
+
+.policies a {
+  display: inline-block;
+}
+
 
 h2:last-child, 
 h3:last-child, 
@@ -280,24 +310,25 @@ p:last-child {
   left: 2rem;
 }
 
+.pa2 {
+    position: absolute;
+    right: -4rem;
+    bottom: 0.5rem;
+}
 
 /* ------------ Buttons & Links ------------ */
 a {
     color: inherit;
 }
 
-a:hover {
-  color: var(--featured-text); 
-}
+
 
 p a {
     text-decoration: none;
     border-bottom: 1px solid;
 }
 
-p a:hover { 
-  color: var(--featured-text); 
-}
+
 
 .button { 
     display: inline-block;
@@ -310,7 +341,9 @@ p a:hover {
 }
 
 .button:hover {
-    color: var(--featured-text);
+    color: white;
+    background-color: var(--medium);
+    border: 1px solid var(--medium);
 }
 
 .subtle-button {
@@ -337,9 +370,7 @@ nav a {
     display: inline-block;
     text-decoration: none;
 }
-nav a:hover {
-  color: var(--featured-text);
-}
+
 
 /* ------------ Footer Styles -------------- */
 
@@ -629,16 +660,17 @@ textarea {
 }
 
 button {
-    font-size: 1.2rem;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid var(--medium);
-    text-align: center;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: 400;
-    font-family: 'Jost', sans-serif;
+    line-height: 1;
     padding: 0.5rem 1rem;
+    border-radius: 50rem;
+    border: 1px solid;
+    font-size: 1.2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--dark-text);
+    cursor: pointer;
+    background-color: var(--light);
 }
 
 button:hover {
@@ -670,7 +702,7 @@ hr.short.center {
 
 
 
-
+.tgo { font-family: 'TGO', sans-serif;}
 
 
 

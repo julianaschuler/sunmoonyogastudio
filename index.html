@@ -23,10 +23,10 @@ seo:
 </section>
 
 
-<section class="grid bg-image bg-welle">
+<section class="grid bg-image bg-welle capped-width" id="yoga">
   <div class="pa1 text-white">
     <h1>Hatha</h1>
-    <h1 class="h1-sub">Yoga</h1>
+    <h1 class="h1-sub tgo">yoga</h1>
   </div>
   <div class="col-7"></div>
   <div class="col-5-right right">
@@ -38,13 +38,73 @@ seo:
         <p class="price" style="margin-bottom: 0;"> CHF 15 students </p>
         <p class="price"> CHF 25 adults </p>
         <br>
-<!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juliana-schuler/30min'});return false;" class="button">Buche Jetzt</a>
-<!-- Calendly link widget end -->
+        <!-- Calendly link widget begin -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juliana-schuler/30min'});return false;" class="button">Buche Jetzt</a>
+        <!-- Calendly link widget end -->
       </div>
     </div>
   </div>
 </section>
 
+
+<section class="padded capped-width center">
+  <p class="tgo quote"> i feel truly inspired when i am at peace with myself. </p>
+</section>
+
+
+<section class="grid bg-medium capped-width" id="about">
+  <div class="col-7">
+      <div class="col-9 padded text-white">
+        <div class="relative left" style="display: inline-block;">
+          <h1 style="display: inline-block;"> About </h1><h3 class="tgo pa2"> me </h3>
+        </div>
+        <p> Hei, ich bin Juliana. Ich habe 2020 meine Online Yoga Ausbildung im Sivananda Yoga Zentrum im Hatha Yoga Bereich abgeschlossen.</p>
+      </div>
+  </div>
+  <div class="col-5-right right">
+    <div class="margin-c1">
+      <img src="/images/sunmoonyogastudio-about-juliana-2.JPG" class="border-radius">
+    </div>
+  </div>
+</section>
+
+
+<section class="padded padded-b-0 xs-padded-0 padded-t-0 capped-width-v-narrow" id="contact">
+  <div class="padded center">
+    <p> Du möchtest gerne kommen, kannst aber an den vorhandenen Daten nicht? Dann schreib mir gerne, um welche Wochenzeiten es dir passen würde. </p>
+  </div>
+
+    <form class="xs-margin-t-1 padded" action="https://formspree.io/f/xovqrazq" method="POST">
+        <label for="_name"> Name </label>
+        <input type="text" name="_name" id="_name" />
+   
+        <label for="_replyto"> Email </label>
+        <input type="email" name="_replyto" id="_replyto" />
+  
+        <label for="phone"> Telefonnummer </label>
+        <input type="tel" id="phone" name="phone" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" /> 
+   
+        <label for="message"> Nachricht </label>
+        <textarea name="message" id="message"></textarea>
+   
+        <button type="submit" class="button"> Abschicken </button>
+    </form>
+  
+  </section>
+
+
+
+<footer class="capped-width grid-spaceAround">
+  <div class="col-5 padded">
+    <img src="/icons/sun-moon-primary-logo-black.svg" style="width: 100%;">
+  </div>
+  <div class="col-12 center policies">
+    <a href="/impressum.html"> Impressum </a>
+    <a href="/datenschutz.html"> Datenschutz </a>
+  </div>
+  <div class="col-12 center">
+    <p> ©Sun Moon Yoga Studio 2025 </p>
+  </div>
+</footer>
