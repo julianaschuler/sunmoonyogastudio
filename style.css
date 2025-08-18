@@ -1,6 +1,11 @@
 /* ----------- Color Variables --------- */
 /* Looking for the color variables? They have been moved to the inline-styles file in the _includes folder, and pull variables from the site-settings folder in the _data folder.  */
 
+@font-face {
+        font-family: "Horseland";
+        src: url("/fonts/wtf_horseland_regular-webfont.woff2") format("woff2");
+}
+
 /* ----------- CSS RESET --------- */
 
 * {
@@ -120,10 +125,27 @@ html {
 
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
-    background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
+      background-image: url('/images/sunmoonyogastudio-header-banner.jpg');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
+    border-radius: 4rem;
+}
+
+.bg-header {
+      background-image: url('/images/sunmoonyogastudio-header-banner.jpg');
+      border-radius: 4rem;
+}
+
+
+.bg-welle {
+      background-image: url('/images/welle.jpg');
+      border-radius: 4rem;
+}
+
+
+.header-logo {
+  width: 14rem;
 }
 
 .bg-overlay::after {
@@ -178,27 +200,52 @@ a.bg-image { display: block;}
 .uppercase    { text-transform: uppercase; }
 
 body {
-  font-family: 'Mulish', serif;  /* Add your font here */ 
+  font-family: 'IBM Plex Mono', monospace;  /* Add your font here */ 
   color: var(--dark-text);
+}
+
+h1 {
+    font-family: 'Horseland', sans-serif;
+    font-size: 5rem;
+}
+
+.h1-sub {
+  font-size: 3.5rem;
 }
 
 h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin-bottom: 1.2rem;
+  font-family: 'Horseland', sans-serif;
 }
 
-h2 { font-size: 2rem; }
-h3 { font-size: 1.8rem; }
-h4 { font-size: 1.6rem; }
-h5 { font-size: 1.4rem; }
-h6 { font-size: 1.2rem; }
+h2 { font-size: 2rem;  font-family: 'Horseland', sans-serif;
+ }
+h3 { font-size: 2.2rem;   font-family: 'Horseland', sans-serif;
+}
+h4 { font-size: 1.6rem;   font-family: 'Horseland', sans-serif;
+}
+h5 { font-size: 1.4rem;   font-family: 'Horseland', sans-serif;
+}
+h6 { font-size: 1.2rem;  font-family: 'Horseland', sans-serif;
+ }
 
 p, li {
   line-height: 1.4; 
   margin-bottom: 1rem;
-  font-family: 'Martel', serif; 
+  font-family: 'IBM Plex Mono', serif; 
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+.price {
+  font-size: 0.9rem;
+}
+
+.bg-cream {
+  background-color: var(--light);
+  margin: 1rem;
+  text-align: center;
+  border-radius: 3rem;
 }
 
 h2:last-child, 
@@ -227,6 +274,12 @@ p:last-child {
 
 .no-deco { text-decoration: none; }
 
+.pa1 {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
 
 /* ------------ Buttons & Links ------------ */
 a {
@@ -250,8 +303,10 @@ p a:hover {
     display: inline-block;
     text-decoration: none;
     line-height: 1;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50rem;
     border: 1px solid;
+    font-size: 1.2rem;
 }
 
 .button:hover {
@@ -272,8 +327,13 @@ header {
     padding: 1rem 5%;
 }
 
+header nav a {
+  font-size: 1.5rem;
+  color: white;
+}
+
 nav a {
-    padding: 0.25rem 0.5rem;
+    padding: 0.75rem 1rem;
     display: inline-block;
     text-decoration: none;
 }
