@@ -788,4 +788,27 @@ hr.short.center {
     font-family: 'Horseland', sans-serif;
     font-size: 3.5rem;
 }
+
+
+.bg-welle {
+    background-image: url(/images/welle.jpg);
+    border-radius: 2rem;
+}
+
+.bg-cream {
+    background-color: var(--light);
+    margin: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.bg-medium {
+    background-color: var(--medium);
+    border-radius: 2rem;
+}
+
+.border-radius {
+    border-radius: 2rem;
+}
+
 }
