@@ -773,4 +773,19 @@ hr.short.center {
       font-weight: 300;
       font-family: 'Martel', serif; 
     }
+
+    .bg-header {
+        background-image: url(/images/sunmoonyogastudio-header-banner.jpg);
+        border-radius: 2rem;
+    }
+
+
+    .xs-padded-c1 {
+      padding: 5rem;
+    }
+
+    h1 {
+    font-family: 'Horseland', sans-serif;
+    font-size: 3.5rem;
+}
 }
